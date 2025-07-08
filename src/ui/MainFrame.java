@@ -80,7 +80,7 @@ public class MainFrame extends JFrame {
     
     private void loadTasks() {
         tableModel.setRowCount(0);
-        List<Task> tasks = service.getTask();
+        List<Task> tasks = service.getTasks();
         for (Task t : tasks) {
             tableModel.addRow(new Object[]{
                 t.getId(),

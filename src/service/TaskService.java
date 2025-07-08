@@ -36,7 +36,7 @@ public class TaskService {
         dao.saveAll(tasks);
     }
     
-    public List<Task> getTask() {
+    public List<Task> getTasks() {
         return new ArrayList<>(tasks);
     }
     
